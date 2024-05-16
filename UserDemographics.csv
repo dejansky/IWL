@@ -1,0 +1,17 @@
+Id,Start time,Completion time,Email,Name,Utilization of PC,Frequency of using Fleet Services,Main purpose of using Fleet Services,Which category includes your age?,Gender,Education,Eye vision
+1,4/9/24 8:45:41,4/9/24 8:46:22,anonymous,,Advanced,Weekly,Personal (You own a Husqvarna automower and have it connected to Fleet),35-44,Man,Bachelor degree,Corrected
+2,4/9/24 8:53:46,4/9/24 8:55:31,anonymous,,Advanced,Daily,"Professional (Work related, integrating tool or products to Fleet) ",25-34,Man,Bachelor degree,Normal
+3,4/9/24 9:02:30,4/9/24 9:03:05,anonymous,,Advanced,Daily,Business (You use Fleet Services as a business partner or any other business aspect),25-34,Man,Graduate degree,Corrected
+4,4/10/24 11:34:54,4/10/24 11:38:02,anonymous,,Middle,Weekly,"Professional (Work related, integrating tool or products to Fleet) ",45-54,Man,Other,Corrected
+5,4/10/24 12:34:44,4/10/24 12:35:57,anonymous,,Middle,Weekly,"Professional (Work related, integrating tool or products to Fleet) ",35-44,Man,Other,Normal
+6,4/10/24 14:02:12,4/10/24 14:06:17,anonymous,,Basic,Less than monthly,"Professional (Work related, integrating tool or products to Fleet) ",45-54,Man,High school degree or equivalent,Normal
+7,4/10/24 15:00:05,4/10/24 15:02:05,anonymous,,Middle,Less than monthly,"Professional (Work related, integrating tool or products to Fleet) ",25-34,Woman,High school degree or equivalent,Corrected
+8,4/10/24 15:01:53,4/10/24 15:03:02,anonymous,,Middle,Less than monthly,"Professional (Work related, integrating tool or products to Fleet) ",45-54,Man,High school degree or equivalent,Normal
+9,4/11/24 15:14:52,4/11/24 15:18:38,anonymous,,Basic,Weekly,"Professional (Work related, integrating tool or products to Fleet) ",45-54,Man,High school degree or equivalent,Corrected
+10,5/6/24 13:56:16,5/6/24 13:59:10,anonymous,,Advanced,Weekly,Personal (You own a Husqvarna automower and have it connected to Fleet),25-34,Man,Bachelor degree,Normal
+11,5/6/24 13:59:10,5/6/24 14:00:53,anonymous,,Basic,Weekly,"Professional (Work related, integrating tool or products to Fleet) ",35-44,Man,Bachelor degree,Normal
+12,5/7/24 16:03:44,5/7/24 16:04:37,anonymous,,Middle,Weekly,"Professional (Work related, integrating tool or products to Fleet) ",18-24,Man,Bachelor degree,Normal
+13,5/8/24 7:31:50,5/8/24 7:33:50,anonymous,,Basic,Less than monthly,"Professional (Work related, integrating tool or products to Fleet) ",35-44,Man,Graduate degree,Normal
+14,5/8/24 7:33:31,5/8/24 7:38:39,anonymous,,Basic,Less than monthly,Business (You use Fleet Services as a business partner or any other business aspect),35-44,Man,Graduate degree,Normal
+15,5/8/24 13:42:00,5/8/24 13:42:22,anonymous,,Advanced,Less than monthly,"Professional (Work related, integrating tool or products to Fleet) ",18-24,Woman,Graduate degree,Corrected
+16,5/8/24 14:11:26,5/8/24 14:12:48,anonymous,,Middle,Weekly,"Professional (Work related, integrating tool or products to Fleet) ",35-44,Man,Bachelor degree,Normal
