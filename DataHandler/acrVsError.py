@@ -2,36 +2,29 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np
+from scipy.stats import ttest_ind
 
 # Load the CSV data into a pandas DataFrame
 df = pd.read_csv('./SanitizedData/records_w.csv')
 
-# Convert 'error' column to boolean
-df['error'] = df['error'].astype(bool)
 
-# Calculate the overall mean ACR
-mean_acr = df['ACR'].mean()
+# Get the 'ACR' values for the 'error' and 'no error' groups
+group_false = df[df['error'] == False]['ACR']
+group_true = df[df['error'] == True]['ACR']
 
-# Visualizing with a Bar Chart of Mean ACR
-plt.figure(figsize=(10, 6))
+# Calculate means
+mean_false = np.mean(group_false)
+mean_true = np.mean(group_true)
 
-# Plot the mean ACR for each error condition
-bar_plot = sns.barplot(x='error', y='ACR', data=df, estimator=np.mean, ci=None, palette=['blue', 'red'])
+# Calculate standard deviations
+std_false = np.std(group_false, ddof=1)
+std_true = np.std(group_true, ddof=1)
 
-# Add a horizontal line representing the overall mean ACR
-plt.axhline(mean_acr, color='red', linestyle='--')
+# Perform t-test
+t_stat, p_val = ttest_ind(group_false, group_true)
+print(f"t-Statistic: {t_stat}, p-Value: {p_val}")
 
-# Get the height of the bars
-bar_heights = [p.get_height() for p in bar_plot.patches]
-
-# Add the mean values on top of the bars
-for i, bar_height in enumerate(bar_heights):
-    bar_plot.text(i, bar_height, f'{bar_height:.2f}', ha='center', va='bottom')
-
-# Add the overall mean value next to the horizontal line
-plt.text(1, mean_acr, f'Overall Mean: {mean_acr:.2f}', va='bottom', color='red')
-
-plt.title('Average ACR by Error Condition (Written Instructions)')
-plt.xlabel('Error Occurred')
-plt.ylabel('Average ACR')
-plt.show()
+if p_val < 0.05:
+    print("Reject the null hypothesis: Significant difference between the groups")
+else:
+    print("Fail to reject the null hypothesis: No significant difference between the groups")
